@@ -4,6 +4,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const staggerChildrenVariants = {
   initial: {
@@ -50,11 +51,22 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white border border-black/10 rounded-xl px-3 py-2 sm:px-5 sm:py-3 text-sm sm:text-base
-            dark:bg-white/10 dark:text-white/80"
+            dark:bg-white/10 dark:text-white/80 flex items-center justify-center"
             key={index}
             variants={fadeInAnimationVariants}
           >
-            {skill}
+            <div className="w-full flex items-center justify-center gap-x-2 flex-wrap">
+              <div className="relative size-6">
+                <Image
+                  src={skill.img}
+                  alt={skill.title}
+                  fill
+                  className="object-contain object-center"
+                />
+              </div>
+
+              <div>{skill.title}</div>
+            </div>
           </motion.li>
         ))}
       </motion.ul>

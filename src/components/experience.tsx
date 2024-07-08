@@ -17,6 +17,7 @@ type ExperienceElementProps = {
   item: {
     date: string;
     icon: React.ReactNode;
+    features: string[];
     title: string;
     location: string;
     description: string;
@@ -66,17 +67,26 @@ function ExperienceElement({ theme, item }: ExperienceElementProps) {
         }}
       >
         <h3 className="font-semibold capitalize">{item.title}</h3>
-        <p className="font-normal !mt-0">{item.location}</p>
+        <p className="font-normal !my-2">{item.location}</p>
         <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
           {item.description}
         </p>
+        <ul className="list-disc ml-4 space-y-4 !mt-2">
+          {item.features.map((feature, index) => (
+            <li key={index}>
+              <p className="!font-normal text-gray-700 dark:text-white/75 flex items-center gap-x-1">
+                {feature}
+              </p>
+            </li>
+          ))}
+        </ul>
       </VerticalTimelineElement>
     </div>
   );
 }
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.2);
   const { theme } = useTheme();
 
   return (

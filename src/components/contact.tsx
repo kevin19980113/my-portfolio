@@ -15,7 +15,6 @@ import { FaPaperPlane } from "react-icons/fa";
 import { ImSpinner3 } from "react-icons/im";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
-// import toast from "react-hot-toast";
 
 export default function Contact() {
   const {

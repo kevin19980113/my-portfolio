@@ -10,9 +10,10 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { buttonVariants } from "./ui/button";
+import myPhotoImg from "../../public/my-photo.jpg";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.3);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -32,10 +33,10 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
-              width="192"
-              height="192"
+              src={myPhotoImg}
+              alt="My Photo"
+              width="200"
+              height="200"
               quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -63,11 +64,25 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Ricardo.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">
+          Hello, I&apos;m HYUNHO LEE (Known as Kevin).
+        </span>{" "}
+        I&apos;m a{" "}
+        <span className="font-bold text-blue-600 dark:text-blue-300">
+          front-end developer
+        </span>
+        <br />I enjoy solving problems from various challenges
+        <br />
+        My focus is{" "}
+        <span className="underline text-blue-600 dark:text-blue-300">
+          React (Next.js)
+        </span>
+        .<br />
+        Also, currently studying{" "}
+        <span className="font-bold text-emerald-600 dark:text-emerald-300">
+          Backend
+        </span>{" "}
+        to expand my expertise.
       </motion.h1>
 
       <motion.div
@@ -82,7 +97,7 @@ export default function Intro() {
           href="#contact"
           className={cn(
             buttonVariants(),
-            "group px-7 py-6 rounded-xl flex items-center gap-x-2 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800"
+            "group px-7 py-6 rounded-xl flex items-center gap-x-2 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-800"
           )}
           onClick={() => {
             setActiveSection("Contact");
@@ -110,7 +125,7 @@ export default function Intro() {
               buttonVariants(),
               "rounded-full px-4 py-4 bg-white group dark:hover:bg-slate-900"
             )}
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/hyunho-lee"
             target="_blank"
           >
             <BsLinkedin className="size-5 text-black group-hover:text-white dark:group-hover:text-white" />
