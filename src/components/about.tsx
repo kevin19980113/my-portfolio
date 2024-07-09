@@ -31,11 +31,11 @@ export default function About() {
         under a professor for one and a half years. Additionally, I completed an
         internship at Osstem Implant, where I specialized in{" "}
         <span className="font-medium italic text-xl text-orange-400">
-          3D rendering and developed a 3D modifier for a dental CT program with
-          user interaction.{" "}
+          3D rendering and developed a 3D modification for a dental CT program
+          with user interaction Using C++ and QT
         </span>
-        Using C++ and QT, I created my first user-interactive interface, which
-        sparked my interest in the{" "}
+        , I created my first user-interactive interface, which sparked my
+        interest in the{" "}
         <span className="font-semibold text-xl text-blue-600 dark:text-blue-400">
           web front-end field.
         </span>{" "}
@@ -67,10 +67,9 @@ export default function About() {
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy
         watching baseball games, watching movies or TV shows on Netflix, and
-        spending quality time with my lovely girlfriend. I also enjoy watching
-        {""}
+        spending quality time with my lovely girlfriend😍 I also enjoy watching{" "}
         <span className="italic font-medium">latest tech video</span> from other
-        programmer&apos;s channel.
+        developer&apos;s channel.
       </p>
     </motion.section>
   );

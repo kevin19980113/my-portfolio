@@ -52,8 +52,12 @@ export const experiencesData = [
     title: "C Programming Practice teaching assistant",
     location: "Seoul, South Korea",
     description:
-      "As a Teaching Assistant for the C Programming Practice course at my university, I was responsible for assisting the professor in delivering course content and providing support to students over Three semesters. My primary duties included conducting lab sessions, grading assignments, and offering one-on-one assistance to students struggling with course material. I  Enhanced problem-solving skills by debugging diverse student code and improved communication by explaining complex concepts clearly.",
-    features: [],
+      "As a Teaching Assistant for the C Programming Practice course at my university, I was responsible for assisting the professor in delivering course content and providing support to students over Three semesters. I  Enhanced problem-solving skills by debugging diverse student code and improved communication by explaining complex concepts clearly.",
+    features: [
+      "Conducted weekly lab sessions for groups of 25-30 students, demonstrating practical applications of C programming concepts",
+      " Graded and provided detailed feedback on student assignments, ensuring thorough understanding of course material",
+      "offered personalized one-on-one assistance to students struggling with complex problem to solve",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "2018, 2022",
   },
@@ -63,9 +67,9 @@ export const experiencesData = [
     description:
       "I completed an internship in 3D Dental CT program development, where I implemented some features of the software scheduled for release in the second half of the year.",
     features: [
-      "Developed a 3D modification tool based on the concept of 3D rendering ( used C++ )",
-      "Linked the 3D modifications to the actual CT image's viewpoint, opacity, etc, so clients could interact with the 3D modification tool through the user interface.",
-      "Implemented the program's user interface (3D controller and CT Image Screen) ( used Qt )",
+      "Developed a 3D modification tool using C++, incorporating 3D rendering techniques to visualization of dental CT scans",
+      "Integrated 3D modifications with CT image parameters, allowing real-time adjustments to viewpoint, opacity and other visual elements",
+      "Implemented user interface for the 3D controller and CT image screen using Qt, improving user experience and workflow efficiency",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "Jan-Mar, 2022",
@@ -74,8 +78,11 @@ export const experiencesData = [
     title: "Graduated Hankuk University of Foreign Studies",
     location: "Seoul, South Korea",
     description:
-      "I graduated after 4 years of studying at Hankuk University of Foreign Studies. My major is Bio Medical Engineering. I also studied computer science & electrionic systems as a minor.",
-    features: [],
+      "I graduated after 4 years of studying at Hankuk University of Foreign Studies.",
+    features: [
+      "Bachelor’s degree in Bio Medical Engineering",
+      "Minor in Computer and electronics Systems Engineering",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
@@ -85,7 +92,7 @@ export const projectsData = [
   {
     title: "Audiophile ecommerce",
     description:
-      "Developed a high-performance e-commerce web using Next.js, React, and Tailwind CSS. Utilized react-hook-form and zod for efficient form handling and validation / Zustand for State management. Integrated Kinde for Authentication, resend for email verification.",
+      "Developed a high-performance e-commerce web using Next.js, React, and Tailwind CSS. Utilized react-hook-form and zod schema for efficient form handling and validation / Zustand for State management. Integrated Kinde for Authentication, resend for email receipt.",
     tags: ["TypeScript", "React", "Next.js", "Tailwnd", "Kinde", "Resend"],
     imageUrl: audiophileImg,
     href: "https://audiophile-ecommerce-zg58.vercel.app",
@@ -94,7 +101,7 @@ export const projectsData = [
   {
     title: "Designo Page",
     description:
-      "Developed a responsive and visually appealing web using Next.js for Designo, a platform showcasing various design services. The project involved creating multiple pages, including home, about, contact, and product categories, with a focus on user experience and performance optimization.",
+      "Developed a responsive and visually appealing web showcasing various design services using Next.js Implementing SSR and SSG. The project involved creating multiple pages, including home, about, contact, and product categories, with a focus on user experience and performance optimization.",
     tags: ["TypeScript", "React", "Next.js", "Tailwnd", "Resend"],
     imageUrl: designoImg,
     href: "https://designo-page-delta.vercel.app",
@@ -103,7 +110,7 @@ export const projectsData = [
   {
     title: "Task Management Web App",
     description:
-      "Developed a modern task management web app with drag-and-drop functionality for task reordering using React and TypeScript, Implemented state management with Zustand and utilized React Hook Form for form handling.",
+      "Developed a modern task management web app with drag-and-drop functionality for task reordering using React and TypeScript, Implemented state management using Zustand ensuring efficient state handling without unnecessary rerendring and utilized React Hook Form for form handling.",
     tags: ["React", "TypeScript", "Tailwind", "Framer-Motion"],
     imageUrl: taskManagementAppImg,
     href: "https://kevin19980113.github.io/Kanban-task-management-web-app/",
@@ -113,7 +120,7 @@ export const projectsData = [
   {
     title: "Happy Hippo Marketplace",
     description:
-      "The Happy Hippo Marketplace is a modern e-commerce platform. It features a responsive and interactive user interface, secure payment processing, and efficient state management. Integrated Stripe and Kinde for secure payment processing with authentication.",
+      "The Happy Hippo Marketplace is a modern e-commerce Web. It features a responsive and interactive user interface, secure payment processing, and efficient state management. Integrated Stripe and Kinde for secure payment processing with authentication.",
     tags: ["TypeScript", "React", "Next.js", "Tailwind", "Kinde", "Stripe"],
     imageUrl: happyHippoImg,
     href: "https://happy-hippo-marketplace.vercel.app",

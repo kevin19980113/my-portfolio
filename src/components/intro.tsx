@@ -10,7 +10,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { buttonVariants } from "./ui/button";
-import myPhotoImg from "../../public/my-photo.jpg";
+import meImg from "../../public/me.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.3);
@@ -33,7 +33,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src={myPhotoImg}
+              src={meImg}
               alt="My Photo"
               width="200"
               height="200"
