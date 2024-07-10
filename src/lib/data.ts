@@ -99,15 +99,6 @@ export const projectsData = [
     githubHref: "https://github.com/kevin19980113/audiophile-ecommerce",
   },
   {
-    title: "Designo Page",
-    description:
-      "Developed a responsive and visually appealing web showcasing various design services using Next.js Implementing SSR and SSG. The project involved creating multiple pages, including home, about, contact, and product categories, with a focus on user experience and performance optimization.",
-    tags: ["TypeScript", "React", "Next.js", "Tailwnd", "Resend"],
-    imageUrl: designoImg,
-    href: "https://designo-page-delta.vercel.app",
-    githubHref: "https://github.com/kevin19980113/designo-page",
-  },
-  {
     title: "Task Management Web App",
     description:
       "Developed a modern task management web app with drag-and-drop functionality for task reordering using React and TypeScript, Implemented state management using Zustand ensuring efficient state handling without unnecessary rerendring and utilized React Hook Form for form handling.",
@@ -116,6 +107,15 @@ export const projectsData = [
     href: "https://kevin19980113.github.io/Kanban-task-management-web-app/",
     githubHref:
       "https://github.com/kevin19980113/Kanban-task-management-web-app",
+  },
+  {
+    title: "Designo Page",
+    description:
+      "Developed a responsive and visually appealing web showcasing various design services using Next.js Implementing SSR and SSG. The project involved creating multiple pages, including home, about, contact, and product categories, with a focus on user experience and performance optimization.",
+    tags: ["TypeScript", "React", "Next.js", "Tailwnd", "Resend"],
+    imageUrl: designoImg,
+    href: "https://designo-page-delta.vercel.app",
+    githubHref: "https://github.com/kevin19980113/designo-page",
   },
   {
     title: "Happy Hippo Marketplace",

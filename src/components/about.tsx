@@ -30,7 +30,7 @@ export default function About() {
         </span>{" "}
         under a professor for one and a half years. Additionally, I completed an
         internship at Osstem Implant, where I specialized in{" "}
-        <span className="font-medium italic text-xl text-orange-400">
+        <span className="font-medium italic text-xl text-blue-600 dark:text-blue-400">
           3D rendering and developed a 3D modification for a dental CT program
           with user interaction Using C++ and QT
         </span>
