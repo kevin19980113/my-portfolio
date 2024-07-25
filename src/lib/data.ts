@@ -72,7 +72,7 @@ export const experiencesData = [
       "Implemented user interface for the 3D controller and CT image screen using Qt, improving user experience and workflow efficiency",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "Jan-Mar, 2022",
+    date: "Jan-Jul, 2022",
   },
   {
     title: "Graduated Hankuk University of Foreign Studies",
